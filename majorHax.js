@@ -1,5 +1,5 @@
 var runBot = function() {
-	function hello(hi) {
+	function hello() {
 		API.sendChat('/em ArrwkeysOfficial Bot is now running...');
 	}
 
