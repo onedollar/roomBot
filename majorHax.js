@@ -1,16 +1,18 @@
 var runBot = function() {
 	function hello() {
-		API.sendChat('/em ArrwkeysOfficial Bot is now running...');
+		API.sendChat('Pure Noise bot is now running...');
 	}
+	
+	$(document).ready(hello);
 
 	function userJoin(uJ) {
-		API.sendChat('Hey there, ' + uJ.username);
+		API.sendChat('Welcome, @' + uJ.username);
 	}
 
 	API.on(API.USER_JOIN, userJoin);
 
 	function userLeave(uL) {
-		API.sendChat('Goodbye, ' + uL.username);
+		API.sendChat('Goodbye, @' + uL.username);
 	}
 
 	API.on(API.USER_LEAVE, userLeave);
