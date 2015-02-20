@@ -1,6 +1,6 @@
 var runBot = function() {
 	function hello() {
-		API.sendChat('Pure Noise bot is now running...');
+		API.sendChat('em/ Pure Noise bot is now running...');
 	}
 	
 	$(document).ready(hello);
